@@ -13,7 +13,7 @@
         <header class="header">
             <h1>Co-operative Society Maintenance Fund Explorer</h1>
             <p class="subtitle">Analysis Period: 2024-25 to 2025-26 with Solar Implementation Projections</p>
-            <p class="note">Projected maintenance if solar was implemented last year as planned.</p>
+            <p class="note">Projected maintenance is calculated with notional numbers considering if solar was implemented last year as planned.</p>
         </header>
 
         <!-- Wing Selector -->
@@ -24,13 +24,13 @@
                     <select id="wing-select" class="form-control" name="wing-select">
                         <option value="A" selected>Wing A (All)</option>
                         <option value="B">Wing B (01,02)</option>
-                        <option value="B.1">Wing B.1 (03,04)</option>
+                        <option value="B.1">Wing B (03,04)</option>
                         <option value="C">Wing C (01,02)</option>
-                        <option value="C.1">Wing C.1 (03,04)</option>
+                        <option value="C.1">Wing C (03,04)</option>
                         <option value="D">Wing D (01,02)</option>
-                        <option value="D.1">Wing D.1 (03,04)</option>
+                        <option value="D.1">Wing D (03,04)</option>
                         <option value="E">Wing E (1,6)</option>
-                        <option value="E.1">Wing E.1 (2,3,4,5)</option>
+                        <option value="E.1">Wing E (2,3,4,5)</option>
                     </select>
                 </div>
             </div>
@@ -50,6 +50,7 @@
                         <h3 id="summary-title-2">Wing A Maintenance (2025-26)</h3>
                         <div class="amount" id="total-2025">₹8,348.33</div>
                         <div class="change increase" id="change-2025">+16.9%</div>
+                        <div>w.r.t. 24-25</div>
                     </div>
                 </div>
                 <div class="card summary-card">
@@ -57,6 +58,7 @@
                         <h3 id="summary-title-3">Wing A Projected Maintenance</h3>
                         <div class="amount" id="total-projected">₹7,519.58</div>
                         <div class="change increase" id="change-projected">+5.3%</div>
+                        <div>w.r.t. 24-25</div>
                     </div>
                 </div>
             </div>
@@ -106,9 +108,9 @@
                                     <th class="category-header">Category</th>
                                     <th class="amount-header">2024-25</th>
                                     <th class="amount-header">2025-26</th>
-                                    <th class="change-header">Change</th>
+                                    <th class="change-header">Change (w.r.t. 24-25)</th>
                                     <th class="amount-header">Projected</th>
-                                    <th class="change-header">Change</th>
+                                    <th class="change-header">Change (w.r.t. 24-25)</th>
                                 </tr>
                             </thead>
                             <tbody id="breakdown-tbody">
