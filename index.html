@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-operative Society Maintenance Fund Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Co-operative Society Maintenance Fund Explorer</h1>
+            <p class="subtitle">Analysis Period: 2024-25 to 2025-26 with Solar Implementation Projections</p>
+            <p class="note">Projected maintenance if solar was implemented last year as planned.</p>
+        </header>
+
+        <!-- Wing Selector -->
+        <section class="selector-section">
+            <div class="card">
+                <div class="card__body">
+                    <label for="wing-select" class="form-label">Select Wing/Series:</label>
+                    <select id="wing-select" class="form-control" name="wing-select">
+                        <option value="A" selected>Wing A (All)</option>
+                        <option value="B">Wing B (01,02)</option>
+                        <option value="B.1">Wing B.1 (03,04)</option>
+                        <option value="C">Wing C (01,02)</option>
+                        <option value="C.1">Wing C.1 (03,04)</option>
+                        <option value="D">Wing D (01,02)</option>
+                        <option value="D.1">Wing D.1 (03,04)</option>
+                        <option value="E">Wing E (1,6)</option>
+                        <option value="E.1">Wing E.1 (2,3,4,5)</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Statistics -->
+        <section class="summary-section">
+            <div class="summary-grid">
+                <div class="card summary-card">
+                    <div class="card__body">
+                        <h3 id="summary-title-1">Wing A Maintenance (2024-25)</h3>
+                        <div class="amount" id="total-2024">₹7,143.58</div>
+                    </div>
+                </div>
+                <div class="card summary-card">
+                    <div class="card__body">
+                        <h3 id="summary-title-2">Wing A Maintenance (2025-26)</h3>
+                        <div class="amount" id="total-2025">₹8,348.33</div>
+                        <div class="change increase" id="change-2025">+16.9%</div>
+                    </div>
+                </div>
+                <div class="card summary-card">
+                    <div class="card__body">
+                        <h3 id="summary-title-3">Wing A Projected Maintenance</h3>
+                        <div class="amount" id="total-projected">₹7,519.58</div>
+                        <div class="change increase" id="change-projected">+5.3%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wing Details Section -->
+        <section id="wing-details" class="wing-details">
+            <div class="card">
+                <div class="card__header">
+                    <h2 id="wing-title">Wing A Details</h2>
+                </div>
+                <div class="card__body">
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Area:</span>
+                            <span class="detail-value" id="wing-area">1,714.82 sq ft</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Construction Cost per Sq Ft:</span>
+                            <span class="detail-value">₹1,500</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Total Construction Cost:</span>
+                            <span class="detail-value" id="wing-cost">₹25,72,231.80</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Series:</span>
+                            <span class="detail-value" id="wing-series">All</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maintenance Breakdown Section -->
+        <section id="maintenance-breakdown" class="maintenance-section">
+            <div class="card">
+                <div class="card__header">
+                    <h3>Monthly Maintenance Breakdown</h3>
+                    <button id="export-btn" class="btn btn--outline btn--sm">Export CSV</button>
+                </div>
+                <div class="card__body">
+                    <div class="breakdown-table-container">
+                        <table class="breakdown-table">
+                            <thead>
+                                <tr>
+                                    <th class="category-header">Category</th>
+                                    <th class="amount-header">2024-25</th>
+                                    <th class="amount-header">2025-26</th>
+                                    <th class="change-header">Change</th>
+                                    <th class="amount-header">Projected</th>
+                                    <th class="change-header">Change</th>
+                                </tr>
+                            </thead>
+                            <tbody id="breakdown-tbody">
+                                <!-- Dynamic content -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="taps-info">
+                        <h4>Water Taps Information</h4>
+                        <div class="taps-grid" id="taps-info">
+                            <!-- Dynamic content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts-section">
+            <div class="charts-grid">
+                <!-- Overall Maintenance Chart -->
+                <div class="card chart-card">
+                    <div class="card__header">
+                        <h3 id="overall-chart-title">Wing A Maintenance Comparison</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="overall-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category-wise Chart -->
+                <div class="card chart-card">
+                    <div class="card__header">
+                        <h3 id="category-chart-title">Wing A Category-wise Breakdown</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="category-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Individual Wing Trend -->
+                <div class="card chart-card" id="wing-trend-card">
+                    <div class="card__header">
+                        <h3 id="wing-trend-title">Wing A Maintenance Trend</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="chart-container" style="position: relative; height: 300px;">
+                            <canvas id="wing-trend-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bye-law Information Panel -->
+        <section class="bye-laws-section">
+            <div class="card">
+                <div class="card__header">
+                    <h3>Bye-law Information</h3>
+                    <p class="subtitle">Legal basis for maintenance calculations</p>
+                </div>
+                <div class="card__body">
+                    <div class="bye-laws-container">
+                        <div class="bye-law-item">
+                            <button class="bye-law-toggle" data-category="rm_fund" type="button">
+                                <span>R&M Fund Calculation</span>
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="bye-law-content hidden">
+                                <p id="rm-fund-text">Bye-law 66.a.iii - Expenses on repairs and maintenance of the building/buildings of the Society : At the rate fixed at the general body from time to time, subject to the minimum of 0.75 percent per annum, of the construction cost of each flat for meeting expenses of normal recurring repairs.</p>
+                            </div>
+                        </div>
+                        <div class="bye-law-item">
+                            <button class="bye-law-toggle" data-category="sinking_fund" type="button">
+                                <span>Sinking Fund Calculation</span>
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="bye-law-content hidden">
+                                <p id="sinking-fund-text">Bye-Law 13.c - The Sinking Fund at the rate decided at the meeting of the general body, subject to the minimum of 0.25 per cent per annum of the construction cost of each flat incurred during the construction of the building of the Society and certified by the Architect, excluding the proportionate cost of the land.</p>
+                            </div>
+                        </div>
+                        <div class="bye-law-item">
+                            <button class="bye-law-toggle" data-category="water_charges" type="button">
+                                <span>Water Charges Calculation</span>
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="bye-law-content hidden">
+                                <p id="water-charges-text">Bye-law 66.a.ii - Water Charges : On the basis of total number and size of inlets provided in each flat.</p>
+                            </div>
+                        </div>
+                        <div class="bye-law-item">
+                            <button class="bye-law-toggle" data-category="service_charges" type="button">
+                                <span>Service Charges Calculation</span>
+                                <span class="toggle-icon">+</span>
+                            </button>
+                            <div class="bye-law-content hidden">
+                                <p id="service-charges-text">Bye-law 66.a.vi - Service Charges: Equally divided by number of flats / units.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

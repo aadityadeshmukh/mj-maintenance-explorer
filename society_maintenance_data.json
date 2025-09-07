@@ -1,0 +1,341 @@
+{
+  "wings": {
+    "A": {
+      "series": "All",
+      "area": 1714.82,
+      "construction_cost_per_sqft": 1500.0,
+      "total_construction_cost": 2572231.8,
+      "maintenance_data": {
+        "2024-25": {
+          "rm_fund": 1607.67,
+          "sinking_fund": 535.92,
+          "water_charges": 2000.0,
+          "service_charges": 3000.0,
+          "total": 7143.58,
+          "taps": 4
+        },
+        "2025-26": {
+          "rm_fund": 1607.67,
+          "sinking_fund": 535.92,
+          "water_charges": 2710.0,
+          "service_charges": 3494.75,
+          "total": 8348.33,
+          "taps": 5
+        },
+        "Projected": {
+          "rm_fund": 1607.67,
+          "sinking_fund": 535.92,
+          "water_charges": 2140.0,
+          "service_charges": 3236.0,
+          "total": 7519.58,
+          "taps": 5
+        }
+      }
+    },
+    "B": {
+      "series": "01,02",
+      "area": 1371.25,
+      "construction_cost_per_sqft": 1500.0,
+      "total_construction_cost": 2056881.6,
+      "maintenance_data": {
+        "2024-25": {
+          "rm_fund": 1285.58,
+          "sinking_fund": 428.5,
+          "water_charges": 1500.0,
+          "service_charges": 3000.0,
+          "total": 6214.08,
+          "taps": 3
+        },
+        "2025-26": {
+          "rm_fund": 1285.58,
+          "sinking_fund": 428.5,
+          "water_charges": 2168.0,
+          "service_charges": 3494.75,
+          "total": 7376.83,
+          "taps": 4
+        },
+        "Projected": {
+          "rm_fund": 1285.58,
+          "sinking_fund": 428.5,
+          "water_charges": 1712.0,
+          "service_charges": 3236.0,
+          "total": 6662.08,
+          "taps": 4
+        }
+      }
+    },
+    "B.1": {
+      "series": "03,04",
+      "area": 923.96,
+      "construction_cost_per_sqft": 1500.0,
+      "total_construction_cost": 1385941.8,
+      "maintenance_data": {
+        "2024-25": {
+          "rm_fund": 866.25,
+          "sinking_fund": 288.75,
+          "water_charges": 1500.0,
+          "service_charges": 3000.0,
+          "total": 5655.0,
+          "taps": 3
+        },
+        "2025-26": {
+          "rm_fund": 866.25,
+          "sinking_fund": 288.75,
+          "water_charges": 1626.0,
+          "service_charges": 3494.75,
+          "total": 6275.75,
+          "taps": 3
+        },
+        "Projected": {
+          "rm_fund": 866.25,
+          "sinking_fund": 288.75,
+          "water_charges": 1284.0,
+          "service_charges": 3236.0,
+          "total": 5675.0,
+          "taps": 3
+        }
+      }
+    },
+    "C": {
+      "series": "01,02",
+      "area": 1354.9,
+      "construction_cost_per_sqft": 1500.0,
+      "total_construction_cost": 2032348.8,
+      "maintenance_data": {
+        "2024-25": {
+          "rm_fund": 1270.25,
+          "sinking_fund": 423.42,
+          "water_charges": 1500.0,
+          "service_charges": 3000.0,
+          "total": 6193.67,
+          "taps": 3
+        },
+        "2025-26": {
+          "rm_fund": 1270.25,
+          "sinking_fund": 423.42,
+          "water_charges": 1626.0,
+          "service_charges": 3494.75,
+          "total": 6814.42,
+          "taps": 3
+        },
+        "Projected": {
+          "rm_fund": 1270.25,
+          "sinking_fund": 423.42,
+          "water_charges": 1284.0,
+          "service_charges": 3236.0,
+          "total": 6213.67,
+          "taps": 3
+        }
+      }
+    },
+    "C.1": {
+      "series": "03,04",
+      "area": 864.67,
+      "construction_cost_per_sqft": 1500.0,
+      "total_construction_cost": 1297010.4,
+      "maintenance_data": {
+        "2024-25": {
+          "rm_fund": 810.67,
+          "sinking_fund": 270.25,
+          "water_charges": 1000.0,
+          "service_charges": 3000.0,
+          "total": 5080.92,
+          "taps": 2
+        },
+        "2025-26": {
+          "rm_fund": 810.67,
+          "sinking_fund": 270.25,
+          "water_charges": 1084.0,
+          "service_charges": 3494.75,
+          "total": 5659.67,
+          "taps": 2
+        },
+        "Projected": {
+          "rm_fund": 810.67,
+          "sinking_fund": 270.25,
+          "water_charges": 856.0,
+          "service_charges": 3236.0,
+          "total": 5172.92,
+          "taps": 2
+        }
+      }
+    },
+    "D": {
+      "series": "01,02",
+      "area": 1160.79,
+      "construction_cost_per_sqft": 1500.0,
+      "total_construction_cost": 1741183.2,
+      "maintenance_data": {
+        "2024-25": {
+          "rm_fund": 1088.25,
+          "sinking_fund": 362.75,
+          "water_charges": 1500.0,
+          "service_charges": 3000.0,
+          "total": 5951.0,
+          "taps": 3
+        },
+        "2025-26": {
+          "rm_fund": 1088.25,
+          "sinking_fund": 362.75,
+          "water_charges": 1626.0,
+          "service_charges": 3494.75,
+          "total": 6571.75,
+          "taps": 3
+        },
+        "Projected": {
+          "rm_fund": 1088.25,
+          "sinking_fund": 362.75,
+          "water_charges": 1284.0,
+          "service_charges": 3236.0,
+          "total": 5971.0,
+          "taps": 3
+        }
+      }
+    },
+    "D.1": {
+      "series": "03,04",
+      "area": 753.31,
+      "construction_cost_per_sqft": 1500.0,
+      "total_construction_cost": 1129961.4,
+      "maintenance_data": {
+        "2024-25": {
+          "rm_fund": 706.25,
+          "sinking_fund": 235.42,
+          "water_charges": 1000.0,
+          "service_charges": 3000.0,
+          "total": 4941.67,
+          "taps": 2
+        },
+        "2025-26": {
+          "rm_fund": 706.25,
+          "sinking_fund": 235.42,
+          "water_charges": 1084.0,
+          "service_charges": 3494.75,
+          "total": 5520.42,
+          "taps": 2
+        },
+        "Projected": {
+          "rm_fund": 706.25,
+          "sinking_fund": 235.42,
+          "water_charges": 856.0,
+          "service_charges": 3236.0,
+          "total": 5033.67,
+          "taps": 2
+        }
+      }
+    },
+    "E": {
+      "series": "1,6",
+      "area": 1046.95,
+      "construction_cost_per_sqft": 1500.0,
+      "total_construction_cost": 1570422.0,
+      "maintenance_data": {
+        "2024-25": {
+          "rm_fund": 981.5,
+          "sinking_fund": 327.17,
+          "water_charges": 1500.0,
+          "service_charges": 3000.0,
+          "total": 5808.67,
+          "taps": 3
+        },
+        "2025-26": {
+          "rm_fund": 981.5,
+          "sinking_fund": 327.17,
+          "water_charges": 1626.0,
+          "service_charges": 3494.75,
+          "total": 6429.42,
+          "taps": 3
+        },
+        "Projected": {
+          "rm_fund": 981.5,
+          "sinking_fund": 327.17,
+          "water_charges": 1284.0,
+          "service_charges": 3236.0,
+          "total": 5828.67,
+          "taps": 3
+        }
+      }
+    },
+    "E.1": {
+      "series": "2,3,4,5,",
+      "area": 735.98,
+      "construction_cost_per_sqft": 1500.0,
+      "total_construction_cost": 1103976.0,
+      "maintenance_data": {
+        "2024-25": {
+          "rm_fund": 690.0,
+          "sinking_fund": 230.0,
+          "water_charges": 1000.0,
+          "service_charges": 3000.0,
+          "total": 4920.0,
+          "taps": 2
+        },
+        "2025-26": {
+          "rm_fund": 690.0,
+          "sinking_fund": 230.0,
+          "water_charges": 1084.0,
+          "service_charges": 3494.75,
+          "total": 5498.75,
+          "taps": 2
+        },
+        "Projected": {
+          "rm_fund": 690.0,
+          "sinking_fund": 230.0,
+          "water_charges": 856.0,
+          "service_charges": 3236.0,
+          "total": 5012.0,
+          "taps": 2
+        }
+      }
+    }
+  },
+  "bye_laws": {
+    "rm_fund": "Bye-law 66.a.iii - Expenses on repairs and maintenance of the building/buildings of the Society : At the rate fixed at the general body from time to time, subject to the minimum of 0.75 percent per annum, of the construction cost of each flat for meeting expenses of normal recurring repairs.",
+    "sinking_fund": "Bye-Law 13.c - The Sinking Fund at the rate decided at the meeting of the general body, subject to the minimum of 0.25 per cent per annum of the construction cost of each flat incurred during the construction of the building of the Society and certified by the Architect, excluding the proportionate cost of the land.",
+    "water_charges": "Bye-law 66.a.ii - Water Charges : On the basis of total number and size of inlets provided in each flat.",
+    "service_charges": "Bye-law 66.a.vi - Service Charges: Equally divided by number of flats / units."
+  },
+  "periods": [
+    "2024-25",
+    "2025-26",
+    "Projected"
+  ],
+  "categories": [
+    "R&M Fund",
+    "Sinking Fund",
+    "Water Charges",
+    "Service Charges"
+  ],
+  "summary": {
+    "total_by_period": {
+      "2024-25": 51908.59,
+      "2025-26": 58495.34,
+      "Projected": 53088.59
+    },
+    "average_by_period": {
+      "2024-25": 5767.62,
+      "2025-26": 6499.48,
+      "Projected": 5898.73
+    },
+    "category_totals": {
+      "2024-25": {
+        "rm_fund": 9306.42,
+        "sinking_fund": 3102.18,
+        "water_charges": 12500.0,
+        "service_charges": 27000.0
+      },
+      "2025-26": {
+        "rm_fund": 9306.42,
+        "sinking_fund": 3102.18,
+        "water_charges": 14634.0,
+        "service_charges": 31452.75
+      },
+      "Projected": {
+        "rm_fund": 9306.42,
+        "sinking_fund": 3102.18,
+        "water_charges": 11556.0,
+        "service_charges": 29124.0
+      }
+    }
+  }
+}
